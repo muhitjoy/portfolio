@@ -87,7 +87,7 @@ const Skills = ({ darkMode }) => {
     {
       name: "Next.js",
       icon: nextjs,
-      level: 80,
+      level: 85,
       color: "from-indigo-500 to-purple-500",
     },
   ];
