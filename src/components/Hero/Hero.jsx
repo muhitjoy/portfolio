@@ -88,13 +88,14 @@ const Hero = ({ darkMode }) => {
                 cursor
                 cursorStyle="|"
                 typeSpeed={90}
-                deleteSpeed={0} 
+                deleteSpeed={0}
                 delaySpeed={1000}
               />
             </h1>
             <h3
               className={`title-font text-2xl sm:text-2xl lg:text-4xl mb-4 font-bold ${theme.textPrimary}`}
             >
+              {/* typewriter animation */}
               <span className="text-orange-500">
                 <Typewriter
                   words={[
