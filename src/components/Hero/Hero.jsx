@@ -67,6 +67,7 @@ const Hero = ({ darkMode }) => {
                   data-aos-delay={`${400 + index * 100}`}
                   className="transform hover:scale-110 transition-transform duration-300"
                 >
+                  {/* icon image */}
                   <img
                     src={social.icon}
                     alt={social.alt}
