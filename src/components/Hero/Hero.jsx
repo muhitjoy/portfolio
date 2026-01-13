@@ -1,7 +1,7 @@
-import Instagram from "../../assets/instagram.svg";
-import Facebook from "../../assets/facebook.svg";
-import Github from "../../assets/github.svg";
-import LinkedIn from "../../assets/linkedin.svg";
+import instagram from "../../assets/instagram.svg";
+import facebook from "../../assets/facebook.svg";
+import github from "../../assets/github.svg";
+import linkedIn from "../../assets/linkedin.svg";
 import { DownloadIcon, Mail } from "lucide-react";
 import hero from "../../assets/IMG_9159.JPG";
 import hi from "../../assets/Hi.svg";
@@ -10,22 +10,22 @@ import { Typewriter } from "react-simple-typewriter";
 const Hero = ({ darkMode }) => {
   const socialIcons = [
     {
-      icon: Facebook,
+      icon: facebook,
       alt: "facebook",
       url: "https://www.facebook.com/mamuhit.joy.1/",
     },
     {
-      icon: Instagram,
+      icon: instagram,
       alt: "Instagram",
       url: "https://www.instagram.com/muhit_joy/",
     },
     {
-      icon: Github,
+      icon: github,
       alt: "github",
       url: "https://github.com/muhitjoy",
     },
     {
-      icon: LinkedIn,
+      icon: linkedIn,
       alt: "linkedin",
       url: "https://www.linkedin.com/in/m-a-muhit-joy/",
     },
