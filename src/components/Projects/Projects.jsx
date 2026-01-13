@@ -179,7 +179,7 @@ const Projects = ({ darkMode }) => {
                       }}
                       className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 text-sm rounded-lg hover:opacity-90 transition-colors"
                       data-aos="zoom-in"
-                      data-aos-delay="300"
+                      data-aos-delay="400"
                     >
                       <FaGithub className="text-sm"></FaGithub>
                       <span>Code</span>
