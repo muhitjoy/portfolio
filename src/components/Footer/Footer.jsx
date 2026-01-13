@@ -94,7 +94,7 @@ const Footer = ({ darkMode }) => {
 
         <p className="pt-3 flex items-center justify-center md:justify-end gap-1">
           © {currentYear} Made with <FaHeart className="text-red-500" />
-          <span className="text-orange-500 font-medium">M A Muhit</span>
+          <span className="text-orange-500 font-medium">M A Muhit Joy</span>
         </p>
       </div>
 
