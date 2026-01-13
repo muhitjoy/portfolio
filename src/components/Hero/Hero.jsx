@@ -5,6 +5,7 @@ import LinkedIn from "../../assets/linkedin.svg";
 import { DownloadIcon, Mail } from "lucide-react";
 import hero from "../../assets/IMG_9159.JPG";
 import hi from "../../assets/Hi.svg";
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = ({ darkMode }) => {
   const socialIcons = [
@@ -80,11 +81,37 @@ const Hero = ({ darkMode }) => {
             </div>
             <h1
               className={`title-font text-3xl sm:text-4xl lg:text-5xl mb-4 font-bold ${theme.textPrimary}`}
-              data-aos="fade-up"
-              data-aos-delay="500"
             >
-              Hi I'm M A Muhit joy
+              <Typewriter
+                words={["Hi, I'm M A Muhit Joy"]}
+                loop={1}
+                cursor
+                cursorStyle="|"
+                typeSpeed={90}
+                deleteSpeed={0} 
+                delaySpeed={1000}
+              />
             </h1>
+            <h3
+              className={`title-font text-2xl sm:text-2xl lg:text-4xl mb-4 font-bold ${theme.textPrimary}`}
+            >
+              <span className="text-orange-500">
+                <Typewriter
+                  words={[
+                    "Frontend Developer",
+                    "Backend Developer",
+                    "MERN Stack Developer",
+                  ]}
+                  loop={0} // infinite loop
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={80}
+                  deleteSpeed={60}
+                  delaySpeed={1200}
+                />
+              </span>
+            </h3>
+
             <p
               className={`mb-6 sm:mb-8 leading-relaxed max-w-md sm:max-w-lg ${theme.textSecondary}`}
               data-aos="fade-up"
