@@ -93,7 +93,7 @@ const Contact = ({ darkMode }) => {
                 required
               />
 
-              {/* Email Address - FULL WIDTH */}
+              {/* Email Address */}
               <input
                 type="email"
                 placeholder="Email Address"
