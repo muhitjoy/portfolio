@@ -13,6 +13,7 @@ import express from "../../assets/svgRepo/express-svgrepo-com.svg";
 import nodeJs from "../../assets/svgRepo/node-svgrepo-com.svg";
 import postman from "../../assets/svgRepo/postman.svg";
 import nextjs from "../../assets/svgRepo/next-js.svg";
+import redux from "../../assets/svgRepo/redux-svgrepo.svg";
 
 const Skills = ({ darkMode }) => {
   const skills = [
@@ -89,6 +90,12 @@ const Skills = ({ darkMode }) => {
       icon: nextjs,
       level: 85,
       color: "from-indigo-500 to-purple-500",
+    },
+    {
+      name: "Redux",
+      icon: redux,
+      level: 80,
+      color: "from-orange-300 to-purple-500",
     },
   ];
   return (
