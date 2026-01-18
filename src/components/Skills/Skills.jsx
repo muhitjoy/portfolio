@@ -6,7 +6,7 @@ import tailwindcss from "../../assets/svgRepo/tailwindcss.svg";
 import ReactJs from "../../assets/svgRepo/react-svg.svg";
 import firebase from "../../assets/svgRepo/firebase-svgrepo.svg";
 import vsCode from "../../assets/svgRepo/vs-code-svgrepo.svg";
-import github from "../../assets/svgRepo/github (2).svg";
+import github from "../../assets/svgRepo/github.svg";
 import git from "../../assets/svgRepo/git-svgrepo.svg";
 import mongodb from "../../assets/svgRepo/mongo-svgrepo.svg";
 import express from "../../assets/svgRepo/express-svgrepo-com.svg";
