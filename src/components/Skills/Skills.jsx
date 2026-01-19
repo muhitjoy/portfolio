@@ -157,7 +157,7 @@ const Skills = ({ darkMode }) => {
                     borderColor: darkMode ? "#374151" : "#e5e7eb",
                   }}
                   className="h-full p-6 rounded-2xl border hover:border-orange-500/60 transition-all duration-300 
-                                hover:translate-y-2 group hover:shadow-[0_0_30px_rgba(255,165,0,0.15)]"
+                                hover:translate-y-2 group hover:shadow-[0_0_30px_rgba(255_165_0/0.15)]"
                 >
                   <div className="flex items-center mb-6">
                     <div

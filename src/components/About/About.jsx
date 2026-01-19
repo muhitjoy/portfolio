@@ -107,7 +107,7 @@ const About = ({ darkMode }) => {
             </div>
           </div>
           {/* button */}
-          <button 
+          <button id="skills"
             className={`w-full sm:w-auto border-2 border-orange-500 inline-flex items-center justify-center py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform ${
               darkMode
                 ? "text-white bg-orange-500/10"
