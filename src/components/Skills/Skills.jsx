@@ -104,9 +104,9 @@ const Skills = ({ darkMode }) => {
       style={{
         backgroundColor: darkMode ? "#111827" : "#f9fafb",
       }}
-      className="py-12 realtive overflow-hidden"
+      className="py-12 relative overflow-hidden"
     >
-      <div className="py-14 elative overflow-hidden ">
+      <div className="py-14 relative overflow-hidden ">
         <div className="container px-5 py-14 mx-auto">
           <div className="text-center mb-20" data-aos="fade-up">
             <h1
@@ -157,7 +157,7 @@ const Skills = ({ darkMode }) => {
                     borderColor: darkMode ? "#374151" : "#e5e7eb",
                   }}
                   className="h-full p-6 rounded-2xl border hover:border-orange-500/60 transition-all duration-300 
-                                hover:translate-y-2 group hover:shadow-[0_0_30px_rgb(255,165,0,0,0.15)]"
+                                hover:translate-y-2 group hover:shadow-[0_0_30px_rgba(255,165,0,0.15)]"
                 >
                   <div className="flex items-center mb-6">
                     <div
@@ -210,7 +210,7 @@ const Skills = ({ darkMode }) => {
                     }}
                   >
                     <div
-                      className={`h-full rounded-full bg-linear-to-r ${skill.color} transition-all duration-1000 ease-out `}
+                      className={`h-full rounded-full bg-gradient-to-r ${skill.color}transition-all duration-1000 ease-out `}
                       style={{ width: `${skill.level}%` }}
                     ></div>
                   </div>
