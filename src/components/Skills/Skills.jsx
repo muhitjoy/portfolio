@@ -21,80 +21,105 @@ const Skills = ({ darkMode }) => {
       name: "HTML",
       icon: html5,
       level: 95,
+      link: "https://www.w3schools.com/html/html_intro.asp",
       color: "from-orange-500 to-amber-500",
     },
-    { name: "CSS", icon: css3, level: 90, color: "from-blue-500 to-cyan-500" },
+    {
+      name: "CSS",
+      icon: css3,
+      level: 90,
+      link: "https://www.w3schools.com/css/",
+      color: "from-blue-500 to-cyan-500",
+    },
     {
       name: "Javascript",
       icon: javascript,
       level: 85,
+      link: "https://www.javascript.com/",
       color: "from-yellow-500 to-amber-500",
     },
     {
       name: "Tailwind CSS",
       icon: tailwindcss,
       level: 95,
+      link: "https://tailwindcss.com/",
       color: "from-cyan-500 to-blue-500",
     },
     {
       name: "React.js",
       icon: ReactJs,
       level: 80,
+      link: "https://react.dev/",
       color: "from-teal-500 to-cyan-500",
     },
     {
       name: "Firebase",
       icon: firebase,
       level: 90,
+      link: "https://firebase.google.com/",
       color: "from-teal-500 to-cyan-500",
     },
     {
       name: "VS Code",
       icon: vsCode,
       level: 92,
+      link: "https://code.visualstudio.com/",
       color: "from-teal-500 to-cyan-500",
     },
     {
       name: "Github",
       icon: github,
       level: 85,
+      link: "https://github.com/",
       color: "from-red-500 to-orange-500",
     },
-    { name: "Git", icon: git, level: 95, color: "from-teal-500 to-cyan-500" },
+    {
+      name: "Git",
+      icon: git,
+      level: 95,
+      link: "https://git-scm.com/",
+      color: "from-teal-500 to-cyan-500",
+    },
     {
       name: "MongoDB",
       icon: mongodb,
       level: 92,
+      link: "https://www.mongodb.com/",
       color: "from-blue-500 to-indigo-500",
     },
     {
       name: "Express.js",
       icon: express,
       level: 75,
+      link: "https://expressjs.com/",
       color: "from-orange-500 to-cyan-500",
     },
     {
       name: "Node.js",
       icon: nodeJs,
       level: 75,
+      link: "https://nodejs.org/en",
       color: "from-cyan-500 to-blue-500",
     },
     {
       name: "Postman",
       icon: postman,
       level: 90,
+      link: "https://www.postman.com/",
       color: "from-stone-200 to-yellow-500",
     },
     {
       name: "Next.js",
       icon: nextjs,
       level: 85,
+      link: "https://nextjs.org/",
       color: "from-indigo-500 to-purple-500",
     },
     {
       name: "Redux",
       icon: redux,
       level: 80,
+      link: "https://redux.js.org/",
       color: "from-orange-300 to-purple-500",
     },
   ];
@@ -134,7 +159,8 @@ const Skills = ({ darkMode }) => {
               }}
             >
               Creating fast, responsive web interfaces with React and modern
-              JavaScript. Passionate about clean code and great user experience.{" "}
+              JavaScript. Passionate about clean code and great user
+              experience.{" "}
             </p>
           </div>
           <div
@@ -143,27 +169,30 @@ const Skills = ({ darkMode }) => {
             data-aos-delay="200"
           >
             {skills.map((skill, index) => (
-              <div
+              <a
                 key={index}
-                className="p-4 lg:w-1/4 md:w-1/2 w-full "
+                href={skill.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 lg:w-1/4 md:w-1/2 w-full"
                 data-aos="fade-up"
                 data-aos-delay={`${300 + index * 100}`}
               >
                 <div
                   style={{
                     background: darkMode
-                      ? "linear-gradient(to bottom right, #1f2937, #111827) "
+                      ? "linear-gradient(to bottom right, #1f2937, #111827)"
                       : "linear-gradient(to bottom right, #ffffff, #f3f4f6)",
                     borderColor: darkMode ? "#374151" : "#e5e7eb",
                   }}
                   className="h-full p-6 rounded-2xl border hover:border-orange-500/60 transition-all duration-300 
-                                hover:translate-y-2 group hover:shadow-[0_0_30px_rgba(255_165_0/0.15)]"
+                 hover:translate-y-2 group hover:shadow-[0_0_30px_rgba(255_165_0/0.15)]"
                 >
                   <div className="flex items-center mb-6">
                     <div
                       style={{
                         background: darkMode
-                          ? "linear-gradient(to bottom right, #374151, #1f2937) "
+                          ? "linear-gradient(to bottom right, #374151, #1f2937)"
                           : "linear-gradient(to bottom right, #f3f4f6, #e5e7eb)",
                       }}
                       className="w-16 h-16 rounded-xl p-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
@@ -176,14 +205,14 @@ const Skills = ({ darkMode }) => {
                     </div>
                     <h3
                       className="text-xl font-bold ml-4"
-                      style={{
-                        color: darkMode ? "white" : "#1f2937",
-                      }}
+                      style={{ color: darkMode ? "white" : "#1f2937" }}
                     >
                       {skill.name}
                     </h3>
                   </div>
-                  <div className="mb-2 flex justify-between items-center ">
+
+                  {/* Proficiency Bar */}
+                  <div className="mb-2 flex justify-between items-center">
                     <span
                       className="font-medium"
                       style={{ color: darkMode ? "#d1d5db" : "#6b7280" }}
@@ -195,7 +224,6 @@ const Skills = ({ darkMode }) => {
                         background:
                           "linear-gradient(to right, #f97316, #f59e0b)",
                         WebkitBackgroundClip: "text",
-                        backgroundColor: "text",
                         color: "transparent",
                       }}
                       className="font-bold"
@@ -204,20 +232,18 @@ const Skills = ({ darkMode }) => {
                     </span>
                   </div>
                   <div
-                    className="w-full rounded-full h-3 overflow-hidden "
+                    className="w-full rounded-full h-3 overflow-hidden"
                     style={{
                       backgroundColor: darkMode ? "#374151" : "#e5e7eb",
                     }}
                   >
                     <div
-                      className={`h-full rounded-full bg-gradient-to-r ${skill.color}transition-all duration-1000 ease-out `}
+                      className={`h-full rounded-full bg-gradient-to-r ${skill.color} transition-all duration-1000 ease-out`}
                       style={{ width: `${skill.level}%` }}
                     ></div>
                   </div>
                   <div
-                    className={`mt-6 pt-4 border-t ${
-                      darkMode ? "border-gray-700" : "border-gray-300"
-                    }`}
+                    className={`mt-6 pt-4 border-t ${darkMode ? "border-gray-700" : "border-gray-300"}`}
                   >
                     <div
                       className="h-1 rounded-full opacity-70 group-hover:w-full transition-all duration-500 w-1/3"
@@ -228,7 +254,7 @@ const Skills = ({ darkMode }) => {
                     ></div>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
