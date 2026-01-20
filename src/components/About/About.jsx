@@ -5,7 +5,7 @@ const About = ({ darkMode }) => {
   return (
     <section
       id="about"
-      className={`min-h-screen overflow-hidden flex items-center justify-center px-4 sm:px-6 `}
+      className={`min-h-screen overflow-hidden flex items-center justify-center px-4 sm:px-6 p-8`}
     >
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
         <figure
@@ -28,7 +28,7 @@ const About = ({ darkMode }) => {
                    sm:w-9/12 
                    md:w-8/12 
                    lg:w-9/12 
-                   xl:w-10/12
+                   xl:w-12/12
                    h-auto
                    object-contain
                    z-10
@@ -59,12 +59,23 @@ const About = ({ darkMode }) => {
             className={`text-sm sm:text-base lg:text-lg xl:text-xl mb-6 sm:mb-8 leading-relaxed bg-linear-to-r from-orange-900/10 to-orange-900/5 p-4 sm:p-6 rounded-xl sm:rounded-2xl backdrop-blur-sm ${
               darkMode ? "text-gray-300" : "text-gray-700"
             }`}
-            data-aos="fade-up"
-            data-aos-delay="500"
           >
-           A motivated MERN Stack Developer focused on building clean, responsive, and high-performance web applications using modern technologies to solve real-world problems.
-
+            <span className="block font-semibold text-orange-400 mb-2">
+              Frontend Development
+            </span>
+            I specialize in creating modern, responsive, and user-friendly
+            interfaces using React, Tailwind CSS, and modern UI libraries. I
+            focus on clean design, smooth user experience, and performance
+            optimization to deliver visually appealing web applications.
+            <span className="block font-semibold text-orange-400 mt-4 mb-2">
+              Backend Development
+            </span>
+            I build secure and scalable backend systems using Node.js,
+            Express.js, and MongoDB. My expertise includes RESTful API
+            development, authentication, database management, and server-side
+            logic to ensure reliable and efficient application performance.
           </p>
+
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8 ">
             {/* education */}
             <div className="text" data-aos="zoom-in" data-aos-delay="600">
@@ -82,7 +93,7 @@ const About = ({ darkMode }) => {
             {/* years experiance */}
             <div className="text" data-aos="zoom-in" data-aos-delay="600">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400 ">
-                1+
+                2+
               </div>
               <div
                 className={`text-xs sm:text-sm lg:text-base ${
@@ -107,7 +118,8 @@ const About = ({ darkMode }) => {
             </div>
           </div>
           {/* button */}
-          <button id="skills"
+          <button
+            id="skills"
             className={`w-full sm:w-auto border-2 border-orange-500 inline-flex items-center justify-center py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform ${
               darkMode
                 ? "text-white bg-orange-500/10"
