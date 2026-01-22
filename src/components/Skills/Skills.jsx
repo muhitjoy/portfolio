@@ -166,7 +166,7 @@ const Skills = ({ darkMode }) => {
           <div
             className="flex flex-wrap -mb-4 "
             data-aos="fade-up"
-            data-aos-delay="200"
+            data-aos-delay="400"
           >
             {skills.map((skill, index) => (
               <a
