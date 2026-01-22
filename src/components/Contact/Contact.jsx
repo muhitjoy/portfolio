@@ -1,30 +1,32 @@
 import React, { useRef } from "react";
 import contactImg from "../../assets/ContactImage.png";
-import emailjs from '@emailjs/browser';
-import toast, { Toaster } from "react-hot-toast"; 
+import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = ({ darkMode }) => {
-const form = useRef();
- const sendEmail = (e) => {
+  const form = useRef();
+  const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
-      .sendForm('service_pfyeuh4', 'template_pu3xmiu', form.current, {
-        publicKey: 'fYhdAfBK3viTRZlQ1',
-      })
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      )
       .then(
         () => {
-           toast.success("Message sent successfully!");
-          console.log('SUCCESS!');
+          toast.success("Message sent successfully!");
+          console.log("success");
+          
           form.current.reset();
         },
         (error) => {
-           toast.error("Failed to send message. Please try again.");
-          console.log('FAILED...', error.text);
+          toast.error("Failed to send message. Please try again.");
+          console.log("FAILED...", error.text);
         },
       );
   };
-
 
   return (
     <section
@@ -78,7 +80,9 @@ const form = useRef();
               className="w-full max-w-xs sm:max-w-sm lg:max-w-md h-auto object-contain"
             />
           </div>
-          <form ref={form} onSubmit={sendEmail}
+          <form
+            ref={form}
+            onSubmit={sendEmail}
             style={{
               background: darkMode
                 ? "linear-gradient(to right, #1f2937, #111827)"

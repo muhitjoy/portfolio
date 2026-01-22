@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
 import Navbar from "./components/Navbar/Navbar";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -45,6 +46,8 @@ const App = () => {
       <Projects darkMode={darkMode}></Projects>
       <Contact darkMode={darkMode}></Contact>
       <Footer darkMode={darkMode}></Footer>
+      <Toaster position="top-right" reverseOrder={false} />
+      {/* rest of your app */}
     </div>
   );
 };
