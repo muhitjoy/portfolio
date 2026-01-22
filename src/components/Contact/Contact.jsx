@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import contactImg from "../../assets/ContactImage.png";
+import emailjs from '@emailjs/browser';
+import toast, { Toaster } from "react-hot-toast"; 
 
 const Contact = ({ darkMode }) => {
+const form = useRef();
+ const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_pfyeuh4', 'template_pu3xmiu', form.current, {
+        publicKey: 'fYhdAfBK3viTRZlQ1',
+      })
+      .then(
+        () => {
+           toast.success("Message sent successfully!");
+          console.log('SUCCESS!');
+          form.current.reset();
+        },
+        (error) => {
+           toast.error("Failed to send message. Please try again.");
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
+
   return (
     <section
       id="contact"
@@ -14,7 +38,7 @@ const Contact = ({ darkMode }) => {
         <div
           className="text-center mb-8 sm:mb-10 md:mb-12"
           data-aos="fade-up"
-          data-aos-delay=""
+          data-aos-delay="500"
         >
           <h2
             className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-3"
@@ -54,7 +78,7 @@ const Contact = ({ darkMode }) => {
               className="w-full max-w-xs sm:max-w-sm lg:max-w-md h-auto object-contain"
             />
           </div>
-          <form
+          <form ref={form} onSubmit={sendEmail}
             style={{
               background: darkMode
                 ? "linear-gradient(to right, #1f2937, #111827)"
@@ -68,6 +92,7 @@ const Contact = ({ darkMode }) => {
               {/* First Name */}
               <input
                 type="text"
+                name="from_firstName"
                 placeholder="First Name"
                 style={{
                   backgroundColor: darkMode ? "#374151" : "#faede3",
@@ -82,6 +107,7 @@ const Contact = ({ darkMode }) => {
               {/* Last Name */}
               <input
                 type="text"
+                name="from_lastName"
                 placeholder="Last Name"
                 style={{
                   backgroundColor: darkMode ? "#374151" : "#faede3",
@@ -96,6 +122,7 @@ const Contact = ({ darkMode }) => {
               {/* Email Address */}
               <input
                 type="email"
+                name="from_email"
                 placeholder="Email Address"
                 style={{
                   backgroundColor: darkMode ? "#374151" : "#faede3",
@@ -111,6 +138,7 @@ const Contact = ({ darkMode }) => {
               {/* Phone Number - FULL WIDTH */}
               <input
                 type="tel"
+                name="from_phone"
                 placeholder="Phone Number"
                 style={{
                   backgroundColor: darkMode ? "#374151" : "#faede3",
@@ -127,6 +155,7 @@ const Contact = ({ darkMode }) => {
               <textarea
                 rows="5"
                 placeholder="Your Message"
+                name="message"
                 style={{
                   backgroundColor: darkMode ? "#374151" : "#faede3",
                   borderColor: darkMode ? "#4b5563" : "#d1d5db",
