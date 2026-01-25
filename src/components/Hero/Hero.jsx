@@ -4,7 +4,7 @@ import github from "../../assets/github.svg";
 import linkedIn from "../../assets/linkedin.svg";
 import { DownloadIcon, Mail } from "lucide-react";
 import hero from "../../assets/IMG_9159.JPG";
-import cv from "../../assets/CV/M A MUHIT JOY.resume.pdf";
+import cv from "../../assets/CV/M-A-MUHIT-JOY-Resume.pdf";
 import hi from "../../assets/Hi.svg";
 import { Typewriter } from "react-simple-typewriter";
 
