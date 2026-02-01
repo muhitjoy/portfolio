@@ -132,7 +132,7 @@ const Hero = ({ darkMode }) => {
               >
                 {/* cv */}
                 <a
-                  href="https://drive.google.com/file/d/1AiqCnfEm92xaiMiVm5IxVoobkcbGjlU8/view"
+                  href="https://drive.google.com/file/d/14VSjFxx9TZhvd4lDhFeAyGm5MMOAA6ro/view"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto"
