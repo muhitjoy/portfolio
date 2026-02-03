@@ -11,8 +11,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     { name: "Home", link: "#home" },
     { name: "About", link: "#about" },
     { name: "Skills", link: "#skills" },
-    { name: "Projects", link: "#projects" },
+    { name: "Projects", link: "#projects"},
     { name: "Contact", link: "#contact" },
+    { name: "Footer", link: "#footer" },
   ];
 
   const lightColors = {
