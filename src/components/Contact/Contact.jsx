@@ -96,7 +96,7 @@ const Contact = ({ darkMode }) => {
               {/* First Name */}
               <input
                 type="text"
-                name="from_firstName"
+                name="first_name"
                 placeholder="First Name"
                 style={{
                   backgroundColor: darkMode ? "#374151" : "#faede3",
@@ -111,7 +111,7 @@ const Contact = ({ darkMode }) => {
               {/* Last Name */}
               <input
                 type="text"
-                name="from_lastName"
+                name="last_name"
                 placeholder="Last Name"
                 style={{
                   backgroundColor: darkMode ? "#374151" : "#faede3",
@@ -126,7 +126,7 @@ const Contact = ({ darkMode }) => {
               {/* Email Address */}
               <input
                 type="email"
-                name="from_email"
+                name="user_email"
                 placeholder="Email Address"
                 style={{
                   backgroundColor: darkMode ? "#374151" : "#faede3",
@@ -142,7 +142,7 @@ const Contact = ({ darkMode }) => {
               {/* Phone Number - FULL WIDTH */}
               <input
                 type="tel"
-                name="from_phone"
+                name="phone"
                 placeholder="Phone Number"
                 style={{
                   backgroundColor: darkMode ? "#374151" : "#faede3",
