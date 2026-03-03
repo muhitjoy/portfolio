@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import project1 from "../../assets/projectPic/roommate.PNG";
 import project2 from "../../assets/projectPic/travel.PNG";
@@ -6,9 +6,15 @@ import project3 from "../../assets/projectPic/lawyear.PNG";
 import project4 from "../../assets/projectPic/auction.PNG";
 import project5 from "../../assets/projectPic/flagshipfaceoff.PNG";
 import project6 from "../../assets/projectPic/english_janala.PNG";
+import project7 from "../../assets/projectPic/Devboard.PNG";
+import project8 from "../../assets/projectPic/teahouse.PNG";
+import project9 from "../../assets/projectPic/natureplatter.PNG";
+import project10 from "../../assets/projectPic/kidsschool.PNG";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const Projects = ({ darkMode }) => {
+  const [showAll, setShowAll] = useState(false);
+
   const projects = [
     {
       id: 1,
@@ -71,6 +77,46 @@ const Projects = ({ darkMode }) => {
       liveLink: "https://muhitjoy-ph-assignment-6.netlify.app/",
       tags: ["React", "Tailwind CSS", "Javascript"],
     },
+    {
+      id: 7,
+      title: "DevBoard",
+      description:
+        "A simple and interactive Todo App built with HTML, CSS, and JavaScript that allows users to add, complete, and delete tasks dynamically.",
+      image: project7,
+      githubLink: "https://github.com/muhitjoy/A-5-DevBoard-Project",
+      liveLink: "https://muhitjoy.github.io/A-5-DevBoard-Project/",
+      tags: ["HTML", "Tailwind CSS", "Javascript"],
+    },
+    {
+      id: 8,
+      title: "Tea House",
+      description:
+        "A modern Coffee House landing page designed with HTML and Tailwind CSS.",
+      image: project8,
+      githubLink: "https://github.com/muhitjoy/tea-house-club-with-tailwind",
+      liveLink: "https://muhitjoy.github.io/tea-house-club-with-tailwind/",
+      tags: ["HTML", "Tailwind CSS"],
+    },
+    {
+      id: 9,
+      title: "Nature Platter",
+      description:
+        "A modern Nature Platter landing page designed with HTML and Tailwind CSS to promote healthy and organic foods.",
+      image: project9,
+      githubLink: "https://github.com/muhitjoy/muhit-ph-assignment-3",
+      liveLink: "https://muhitjoy.github.io/muhit-ph-assignment-3/",
+      tags: ["HTML", "Tailwind CSS"],
+    },
+    {
+      id: 10,
+      title: "Kids School",
+      description:
+        "A vibrant Kids School landing page designed with HTML and  CSS.",
+      image: project10,
+      githubLink: "https://github.com/muhitjoy/my-web-assignment-2",
+      liveLink: "https://muhitjoy.github.io/my-web-assignment-2/",
+      tags: ["HTML", "CSS"],
+    },
   ];
 
   return (
@@ -114,7 +160,7 @@ const Projects = ({ darkMode }) => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12 ">
-          {projects.map((project, index) => (
+          {(showAll ? projects : projects.slice(0, 6)).map((project, index) => (
             <div
               key={project.id}
               style={{
@@ -206,19 +252,19 @@ const Projects = ({ darkMode }) => {
           ))}
         </div>
         <div className="text-center mt-10">
-          <a
-            href="#"
-            style={{
-              background: "linear-gradient(to right, #f97316, #f59e0b)",
-            }}
-            className="inline-flex items-center font-semibold gap-2 px-7 py-4 text-white text-sm rounded-full hover:shadow-lg hover:shadow-orange-500/25 transition-all"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-          >
-            <FaGithub className="text-sm"></FaGithub>
-            <span>View All Projects</span>
-            <FaExternalLinkAlt className="text-sm"></FaExternalLinkAlt>
-          </a>
+          <div className="text-center mt-10">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              style={{
+                background: "linear-gradient(to right, #f97316, #f59e0b)",
+              }}
+              className="inline-flex items-center font-semibold gap-2 px-7 py-4 text-white text-sm rounded-full hover:shadow-lg hover:shadow-orange-500/25 transition-all"
+            >
+              <FaGithub className="text-sm" />
+              <span>{showAll ? "Show Less" : "View All Projects"}</span>
+              <FaExternalLinkAlt className="text-sm" />
+            </button>
+          </div>
         </div>
       </div>
     </section>
