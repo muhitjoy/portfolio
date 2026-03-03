@@ -89,7 +89,7 @@ const Projects = ({ darkMode }) => {
     },
     {
       id: 8,
-      title: "Tea House",
+      title: "Tea House club",
       description:
         "A modern Coffee House landing page designed with HTML and Tailwind CSS.",
       image: project8,
