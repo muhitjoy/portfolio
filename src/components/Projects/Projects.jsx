@@ -6,7 +6,7 @@ import project3 from "../../assets/projectPic/lawyear.PNG";
 import project4 from "../../assets/projectPic/auction.PNG";
 import project5 from "../../assets/projectPic/flagshipfaceoff.PNG";
 import project6 from "../../assets/projectPic/english_janala.PNG";
-import project7 from "../../assets/projectPic/Devboard.PNG";
+import project7 from "../../assets/projectPic/devboard.PNG";
 import project8 from "../../assets/projectPic/teahouse.PNG";
 import project9 from "../../assets/projectPic/natureplatter.PNG";
 import project10 from "../../assets/projectPic/kidsschool.PNG";
