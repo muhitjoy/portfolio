@@ -95,7 +95,7 @@ const Footer = ({ darkMode }) => {
               <span className="text-orange-500">
                 <MdLocationOn></MdLocationOn>
               </span>
-              <span> Dhaka, Bangladesh</span>
+              <span> Habiganj District, Sylhet, Bangladesh</span>
             </div>
 
             <p className="pt-3 flex items-center justify-center md:justify-end gap-1">
