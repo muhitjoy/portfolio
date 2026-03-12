@@ -120,7 +120,7 @@ const Hero = ({ darkMode }) => {
             >
               As a MERN Stack Developer, I specialize in creating modern,
               scalable applications with MongoDB, Express.js, React.js, and
-              Node.js, bringing ideas to life through seamless Digital
+              Node.js, bringing ideas to life through seamless digital
               experiences.{" "}
             </p>
             {/* button */}
