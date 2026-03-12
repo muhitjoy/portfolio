@@ -13,7 +13,7 @@ const About = ({ darkMode }) => {
           data-aos-delay="300"
           className="flex flex-wrap justify-center gap-4 relative order-2 lg:order-1"
         >
-          <div className="relative w-75 h-75 lg:w-96 lg:h-96 ">
+          <div className="relative w-full h-96 lg:w-full lg:h-96 ">
             {/* image */}
             <div
               className="absolute inset-0 flex items-center justify-center z-0"
