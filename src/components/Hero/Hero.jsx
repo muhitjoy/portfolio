@@ -83,7 +83,7 @@ const Hero = ({ darkMode }) => {
               className={`title-font text-3xl sm:text-4xl lg:text-5xl mb-4 font-bold ${theme.textPrimary}`}
             >
               <Typewriter
-                words={["Hi, I'm M A Muhit Joy"]}
+                words={["Hi, I'm M.A Muhit Joy"]}
                 loop={1}
                 cursor
                 cursorStyle="|"
