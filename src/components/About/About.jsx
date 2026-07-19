@@ -118,19 +118,16 @@ const About = ({ darkMode }) => {
             </div>
           </div>
           {/* button */}
-          <button
-            id="skills"
-            className={`w-full sm:w-auto border-2 border-orange-500 inline-flex items-center justify-center py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform ${
+          <a
+            href="#projects"
+            className={`w-full sm:w-auto border-2 border-orange-500 inline-flex items-center justify-center py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 ${
               darkMode
                 ? "text-white bg-orange-500/10"
                 : "text-gray-800 bg-white/90"
             }`}
-            data-aos="fade-up"
-            data-aos-delay="900"
           >
-            {" "}
             Learn More
-          </button>
+          </a>
         </article>
       </div>
     </section>
