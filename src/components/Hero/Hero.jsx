@@ -3,7 +3,7 @@ import facebook from "../../assets/facebook.svg";
 import github from "../../assets/github.svg";
 import linkedIn from "../../assets/linkedin.svg";
 import { DownloadIcon, Mail } from "lucide-react";
-import hero from "../../assets/IMG_20251214.webp";
+import hero from "../../assets/Muhit.JPG";
 import hi from "../../assets/Hi.svg";
 import { Typewriter } from "react-simple-typewriter";
 
